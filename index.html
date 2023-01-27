@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="left"></div>
+            <div class="right">
+                <form action="https://formspree.io/f/mvonzgyd" method="POST">
+                    <h1>Get In Touch</h1>
+                    <input type="text" required placeholder="Your Name" name="name">
+                    <input type="email" required placeholder="Your Email" name="email">
+                    <input type="text" required placeholder="Phone" name="phone">
+                    <textarea rows="4" minlength="10" placeholder="Message" name="message"></textarea>
+                    <button type="submit" class="send">send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+    /* paste this line in verbatim */
+    window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+    /* customize formbutton below*/
+</script>
+
+
+</body>
+
+</html>
